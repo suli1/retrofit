@@ -4,7 +4,9 @@
     "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
 <module name="Checker">
-    <module name="NewlineAtEndOfFile"/>
+    <module name="NewlineAtEndOfFile">
+        <property name="lineSeparator" value="lf" />
+    </module>
     <module name="FileLength"/>
     <module name="FileTabCharacter"/>
 
@@ -32,7 +34,7 @@
         <module name="LocalVariableName"/>
         <module name="MemberName"/>
         <module name="MethodName"/>
-        <module name="PackageName"/>
+        <!--<module name="PackageName"/>-->
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
@@ -92,7 +94,6 @@
         <!-- See http://checkstyle.sf.net/config_coding.html -->
         <!--module name="AvoidInlineConditionals"/-->
         <module name="CovariantEquals"/>
-        <module name="DoubleCheckedLocking"/>
         <module name="EmptyStatement"/>
         <module name="EqualsAvoidNull"/>
         <module name="EqualsHashCode"/>
@@ -120,5 +121,8 @@
         <!--module name="FinalParameters"/-->
         <!--module name="TodoComment"/-->
         <module name="UpperEll"/>
+        <module name="Indentation">
+          <property name="basicOffset" value="2"/>
+        </module>
     </module>
 </module>
